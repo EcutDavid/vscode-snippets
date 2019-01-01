@@ -1,0 +1,33 @@
+{
+  "funcIsIntPrime": {
+    "prefix": "funcIsIntPrime",
+    "body": [
+      "func isPrime(n int) bool {",
+      "\tif n == 2 {",
+      "\t\treturn true",
+      "\t}",
+      "\ts := int(math.Sqrt(float64(n)))",
+      "\tfor i := 2; i <= s; i++ {",
+      "\t\tif n%i == 0 {",
+      "\t\t\treturn false",
+      "\t\t}",
+      "\t}",
+      "\treturn true",
+      "}"
+    ]
+  },
+  "scanInt": {
+    "prefix": "scanInt",
+    "body": [
+      "scanner := bufio.NewScanner(os.Stdin)",
+      "scanNum := func() int {",
+      "\tscanner.Scan()",
+      "\tnum, err := strconv.Atoi(scanner.Text())",
+      "\tif err != nil {",
+      "\t\tlog.Fatal(err)",
+      "\t}",
+      "\treturn num",
+      "}"
+    ]
+  }
+}

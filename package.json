@@ -1,0 +1,21 @@
+{
+    "name": "davidg-vscode-snippets",
+    "displayName": "davidg-vscode-snippets",
+    "description": "A collection of snippets that might be useful.",
+    "publisher": "ecutdavid",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "go",
+                "path": "./snippets/go.json"
+            }
+        ]
+    }
+}
