@@ -3,9 +3,12 @@
     "displayName": "davidg-vscode-snippets",
     "description": "A collection of snippets that might be useful.",
     "publisher": "ecutdavid",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.30.0"
+    },
+    "scripts": {
+      "release": "vsce package && vsce publish"
     },
     "categories": [
         "Snippets"
@@ -17,5 +20,9 @@
                 "path": "./snippets/go.json"
             }
         ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/EcutDavid/vscode-snippets"
     }
 }

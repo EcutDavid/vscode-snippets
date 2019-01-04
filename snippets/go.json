@@ -20,7 +20,8 @@
     "prefix": "scanInt",
     "body": [
       "scanner := bufio.NewScanner(os.Stdin)",
-      "scanNum := func() int {",
+      "scanner.Split(bufio.ScanWords)",
+      "scanInt := func() int {",
       "\tscanner.Scan()",
       "\tnum, err := strconv.Atoi(scanner.Text())",
       "\tif err != nil {",
